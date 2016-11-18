@@ -13,5 +13,5 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 no = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 if no == ("q"):
     print ("Goodbye!")
-elif no != ("e", "d", "q"):
+elif no not in ("e", "d", "q"):
      input("Did not understand command, try again:")
