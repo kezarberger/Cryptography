@@ -18,3 +18,7 @@ while again == True:
         again = False
     elif no not in ("e", "d", "q"):
         no = input("Did not understand command, try again:")
+    elif no == "e":
+        print ("o")
+    elif no == "d":
+        print ("m")
