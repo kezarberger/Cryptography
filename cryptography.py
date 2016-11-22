@@ -1,4 +1,4 @@
-"""
+""""
 cryptography.py
 Author: kezar
 Credit: kotz
@@ -19,6 +19,11 @@ while again == True:
     elif no not in ("e", "d", "q"):
         no = input("Did not understand command, try again:")
     elif no == "e":
-        print ("o")
+        char = input("Message: ")
+        input("Key: ") 
+        asscociations.find(char)
+        again = False
     elif no == "d":
-        print ("m")
+        input("Message: ")
+        input ("Key: ")
+        again = False
