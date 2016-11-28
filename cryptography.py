@@ -17,11 +17,11 @@ while again == True:
         print ("Goodbye!")
         again = False
     elif no not in ("e", "d", "q"):
-        no = input("Did not understand command, try again:")
+        no = input("Did not understand command, try again: ")
     elif no == "e":
         char = input("Message: ")
         input("Key: ") 
-        asscociations.find(char)
+        asscociations.find(charge)
         again = False
     elif no == "d":
         input("Message: ")
