@@ -12,7 +12,8 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 no = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 again = True
-numlist = []
+nummes = []
+numkey = []
 while again == True:
     if no == ("q"):
         print ("Goodbye!")
@@ -22,9 +23,14 @@ while again == True:
     elif no == "e":
         fist = input("Message: ")
         for c in fist:
-            numlist.append(associations.find(c) +1)
-            print (numlist)
-        input("Key: ") 
+            nummes.append(associations.find(c))
+        print (nummes)
+        iam = input("Key: ") 
+        for x in iam:
+            numkey.append(associations.find(x))
+        print (numkey)
+        tog = (nummes + numkey)
+        print (tog)
         again = False
     elif no == "d":
         input("Message: ")
