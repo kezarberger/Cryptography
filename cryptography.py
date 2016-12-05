@@ -28,7 +28,7 @@ while again == True:
         iam = input("Key: ") 
         for x in iam:
             numkey.append(associations.find(x))
-        print (numkey)
+        print (numkey) 
         again = False
     elif no == "d":
         input("Message: ")
