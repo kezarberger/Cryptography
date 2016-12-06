@@ -14,6 +14,7 @@ no = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 again = True
 nummes = []
 numkey = []
+combine = []
 while again == True:
     if no == ("q"):
         print ("Goodbye!")
@@ -26,9 +27,14 @@ while again == True:
             nummes.append(associations.find(c))
         print (nummes)
         iam = input("Key: ") 
+        for i in range(6):
+            iam.append(iam)
         for x in iam:
             numkey.append(associations.find(x))
-        print (numkey) 
+        print (numkey)
+        kotz = 0
+        while kotz <= len(nummes):
+            
         again = False
     elif no == "d":
         input("Message: ")
