@@ -33,8 +33,7 @@ while again == True:
             numkey.append(associations.find(x))
         print (numkey)
         kotz = 0
-        while kotz <= len(nummes):
-            
+    
         again = False
     elif no == "d":
         input("Message: ")
