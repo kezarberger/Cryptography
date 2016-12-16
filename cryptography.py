@@ -27,13 +27,9 @@ while again == True:
             nummes.append(associations.find(c))
         print (nummes)
         iam = input("Key: ") 
-        for i in range(6):
-            iam.append(iam)
-        for x in iam:
-            numkey.append(associations.find(x))
+        for i in iam:
+            numkey.append(associations.find(i))
         print (numkey)
-        kotz = 0
-    
         again = False
     elif no == "d":
         input("Message: ")
