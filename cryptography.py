@@ -29,7 +29,12 @@ while again == True:
         iam = input("Key: ") 
         for i in iam:
             numkey.append(associations.find(i))
+        numkey = numkey*10
         print (numkey)
+        kez = []
+        for x in range(len(nummes)):
+            kez.append(nummes[x] + numkey[x])
+        print (kez)
         again = False
     elif no == "d":
         input("Message: ")
