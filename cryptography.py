@@ -37,6 +37,7 @@ while again == True:
         print (kez)
         again = False
     elif no == "d":
+        nwdid = input("Message: ")
         input("Message: ")
         input ("Key: ")
         again = False
