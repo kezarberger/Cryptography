@@ -14,6 +14,8 @@ no = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 again = True
 nummes = []
 numkey = []
+dummes = []
+dumkey = []
 combine = []
 while again == True:
     if no == ("q"):
@@ -38,6 +40,12 @@ while again == True:
         again = False
     elif no == "d":
         nwdid = input("Message: ")
-        input("Message: ")
-        input ("Key: ")
+        for f in nwdid:
+            dummess.append(associations.find(f))
+        print (dummes)
+        idw = input ("Key: ")
+        for k in idw:
+            dumkey.append(associations.find(k))
+        dumkey = dumkey*10
+        print (dumkey)
         again = False
