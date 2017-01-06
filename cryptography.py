@@ -41,11 +41,18 @@ while again == True:
     elif no == "d":
         nwdid = input("Message: ")
         for f in nwdid:
-            dummess.append(associations.find(f))
+            dummes.append(associations.find(f))
         print (dummes)
         idw = input ("Key: ")
         for k in idw:
             dumkey.append(associations.find(k))
-        dumkey = dumkey*10
+        dumkey = dumkey
         print (dumkey)
+        forget = []
+        for p in range(len(dummes)):
+            n = dummes[p] - dumkey[p]
+            if n< 0:
+                n = n+62
+            forget.append(n)
+        print (forget)
         again = False
