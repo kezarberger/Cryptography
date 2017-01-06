@@ -51,8 +51,8 @@ while again == True:
         forget = []
         for p in range(len(dummes)):
             n = dummes[p] - dumkey[p]
-            if n< 0:
-                n = n+62
+            if n < 0:
+                n = n+84
             forget.append(n)
         print (forget)
         again = False
