@@ -55,4 +55,8 @@ while again == True:
                 n = n+84
             forget.append(n)
         print (forget)
+        result = ""
+        for g in forget:
+            result = result + associations[g]
+        print (result)
         again = False
