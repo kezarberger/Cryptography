@@ -27,19 +27,16 @@ while again == True:
         fist = input("Message: ")
         for c in fist:
             nummes.append(associations.find(c))
-        print (nummes)
         iam = input("Key: ") 
         for i in iam:
             numkey.append(associations.find(i))
         numkey = numkey*10
-        print (numkey)
         kez = []
         for x in range(len(nummes)):
             y = (nummes[x] + numkey[x])
             if y > 84:
                 y = y - 85
             kez.append(y)
-        print (kez)
         another = ""
         for z in kez:
             another = another + associations[z]
@@ -49,19 +46,16 @@ while again == True:
         nwdid = input("Message: ")
         for f in nwdid:
             dummes.append(associations.find(f))
-        print (dummes)
         idw = input ("Key: ")
         for k in idw:
             dumkey.append(associations.find(k))
         dumkey = dumkey*10
-        print (dumkey)
         forget = []
         for p in range(len(dummes)):
             n = dummes[p] - dumkey[p]
             if n < 0:
                 n = n+84
             forget.append(n)
-        print (forget)
         result = ""
         for g in forget:
             result = result + associations[g]
