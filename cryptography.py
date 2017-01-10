@@ -37,6 +37,10 @@ while again == True:
         for x in range(len(nummes)):
             kez.append(nummes[x] + numkey[x])
         print (kez)
+        another = ""
+        for z in kez:
+            another = another + associations[z]
+        print (another)
         again = False
     elif no == "d":
         nwdid = input("Message: ")
