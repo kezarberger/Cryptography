@@ -35,7 +35,10 @@ while again == True:
         print (numkey)
         kez = []
         for x in range(len(nummes)):
-            kez.append(nummes[x] + numkey[x])
+            y = (nummes[x] + numkey[x])
+            if y > 84:
+                y = y - 85
+            kez.append(y)
         print (kez)
         another = ""
         for z in kez:
@@ -50,7 +53,7 @@ while again == True:
         idw = input ("Key: ")
         for k in idw:
             dumkey.append(associations.find(k))
-        dumkey = dumkey
+        dumkey = dumkey*10
         print (dumkey)
         forget = []
         for p in range(len(dummes)):
