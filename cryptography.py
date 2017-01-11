@@ -54,10 +54,13 @@ while again == True:
         for p in range(len(dummes)):
             n = dummes[p] - dumkey[p]
             if n < 0:
-                n = n+84
+                n = n+85
             forget.append(n)
         result = ""
         for g in forget:
             result = result + associations[g]
         print (result)
         again = False
+
+        
+        
